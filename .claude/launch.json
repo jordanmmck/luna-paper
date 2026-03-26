@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "Luna Paper dev server",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["server.py"],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
       "port": 3000
     }
   ]
