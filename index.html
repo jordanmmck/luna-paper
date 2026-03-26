@@ -300,6 +300,37 @@
           0 4px 20px rgba(54, 46, 46, 0.08);
       }
 
+      .hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .hero-placeholder {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        aspect-ratio: 16 / 7;
+        background: linear-gradient(135deg, #F5E6E5 0%, #EDE9F4 40%, #E6EFE8 75%, #F5EDD9 100%);
+        color: var(--ink-light);
+        font-size: 14px;
+      }
+
+      .hero-placeholder p {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        font-style: italic;
+        color: var(--ink-mid);
+      }
+
+      .hero-placeholder span {
+        font-size: 13px;
+        color: var(--ink-light);
+      }
+
       /* Mini tracker preview built in CSS */
       .mini-tracker {
         background: white;
@@ -1016,457 +1047,19 @@
         </div>
       </div>
 
-      <!-- Mockup -->
+      <!-- Hero image -->
       <div class="container">
         <div class="mockup-wrap fade-up">
           <div class="mockup-shadow">
-            <div class="mini-tracker">
-              <!-- Phase bar -->
-              <div class="mini-phases-bar">
-                <div class="ph ph-m">Menstrual</div>
-                <div class="ph ph-f">Follicular</div>
-                <div class="ph ph-o">Ovulation</div>
-                <div class="ph ph-l">Luteal</div>
-              </div>
-              <!-- Header -->
-              <div class="mini-header">
-                <div>
-                  <div class="mini-title">Anna's Cycle Tracker</div>
-                  <div class="mini-meta">
-                    MARCH 2026 &nbsp;·&nbsp; 28-DAY CYCLE
-                  </div>
-                </div>
-                <div
-                  style="
-                    text-align: right;
-                    font-size: 8px;
-                    color: #9e8e8e;
-                    line-height: 1.8;
-                  "
-                >
-                  <div>Temp range: 35.80 – 36.80°C</div>
-                  <div>Start date: March 1</div>
-                </div>
-              </div>
-              <!-- Table preview -->
-              <div class="mini-table-wrap">
-                <table class="mini-table">
-                  <tbody>
-                    <tr>
-                      <td class="lbl">Day</td>
-                      <td
-                        class="phase-m"
-                        style="font-weight: 700; color: #c97b78"
-                      >
-                        1
-                      </td>
-                      <td
-                        class="phase-m"
-                        style="font-weight: 700; color: #c97b78"
-                      >
-                        2
-                      </td>
-                      <td
-                        class="phase-m"
-                        style="font-weight: 700; color: #c97b78"
-                      >
-                        3
-                      </td>
-                      <td
-                        class="phase-m"
-                        style="font-weight: 700; color: #c97b78"
-                      >
-                        4
-                      </td>
-                      <td
-                        class="phase-m"
-                        style="font-weight: 700; color: #c97b78"
-                      >
-                        5
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        6
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        7
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        8
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        9
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        10
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        11
-                      </td>
-                      <td
-                        class="phase-f"
-                        style="font-weight: 700; color: #b09ec4"
-                      >
-                        12
-                      </td>
-                      <td
-                        class="phase-o"
-                        style="font-weight: 700; color: #8faf96"
-                      >
-                        13
-                      </td>
-                      <td
-                        class="phase-o"
-                        style="font-weight: 700; color: #8faf96"
-                      >
-                        14
-                      </td>
-                      <td
-                        class="phase-o"
-                        style="font-weight: 700; color: #8faf96"
-                      >
-                        15
-                      </td>
-                      <td
-                        class="phase-o"
-                        style="font-weight: 700; color: #8faf96"
-                      >
-                        16
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        17
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        18
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        19
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        20
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        21
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        22
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        23
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        24
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        25
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        26
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        27
-                      </td>
-                      <td
-                        class="phase-l"
-                        style="font-weight: 700; color: #c9a96e"
-                      >
-                        28
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">BBT</td>
-                      <td class="phase-m">36.1</td>
-                      <td class="phase-m">36.0</td>
-                      <td class="phase-m">36.1</td>
-                      <td class="phase-m">36.0</td>
-                      <td class="phase-m">36.2</td>
-                      <td class="phase-f">36.2</td>
-                      <td class="phase-f">36.3</td>
-                      <td class="phase-f">36.2</td>
-                      <td class="phase-f">36.4</td>
-                      <td class="phase-f">36.3</td>
-                      <td class="phase-f">36.4</td>
-                      <td class="phase-f">36.3</td>
-                      <td class="phase-o">36.6</td>
-                      <td class="phase-o">36.7</td>
-                      <td class="phase-o">36.7</td>
-                      <td class="phase-o">36.6</td>
-                      <td class="phase-l">36.7</td>
-                      <td class="phase-l">36.8</td>
-                      <td class="phase-l">36.7</td>
-                      <td class="phase-l">36.8</td>
-                      <td class="phase-l">36.7</td>
-                      <td class="phase-l">36.6</td>
-                      <td class="phase-l">36.7</td>
-                      <td class="phase-l">36.5</td>
-                      <td class="phase-l">36.4</td>
-                      <td class="phase-l">36.3</td>
-                      <td class="phase-l">36.2</td>
-                      <td class="phase-l">36.1</td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">Energy</td>
-                      <td class="phase-m">Low</td>
-                      <td class="phase-m">Low</td>
-                      <td class="phase-m">Low</td>
-                      <td class="phase-m">Med</td>
-                      <td class="phase-m">Med</td>
-                      <td class="phase-f">Med</td>
-                      <td class="phase-f">Med</td>
-                      <td class="phase-f">High</td>
-                      <td class="phase-f">High</td>
-                      <td class="phase-f">High</td>
-                      <td class="phase-f">High</td>
-                      <td class="phase-f">High</td>
-                      <td class="phase-o">Peak</td>
-                      <td class="phase-o">Peak</td>
-                      <td class="phase-o">Peak</td>
-                      <td class="phase-o">High</td>
-                      <td class="phase-l">High</td>
-                      <td class="phase-l">Med</td>
-                      <td class="phase-l">Med</td>
-                      <td class="phase-l">Med</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                      <td class="phase-l">Low</td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">Mood</td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">Sleep</td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-m"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-f"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-o"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                      <td class="phase-l"></td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">Exercise</td>
-                      <td
-                        class="phase-m"
-                        colspan="5"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Rest, gentle yoga, walks
-                      </td>
-                      <td
-                        class="phase-f"
-                        colspan="7"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Strength training, cardio, new challenges
-                      </td>
-                      <td
-                        class="phase-o"
-                        colspan="4"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        HIIT, group classes, peak performance
-                      </td>
-                      <td
-                        class="phase-l"
-                        colspan="12"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Pilates, swimming, light weights → rest
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">Diet focus</td>
-                      <td
-                        class="phase-m"
-                        colspan="5"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Iron-rich foods, warming soups
-                      </td>
-                      <td
-                        class="phase-f"
-                        colspan="7"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Lean protein, fermented foods, seeds
-                      </td>
-                      <td
-                        class="phase-o"
-                        colspan="4"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Raw veggies, light meals, zinc
-                      </td>
-                      <td
-                        class="phase-l"
-                        colspan="12"
-                        style="
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 6.5px;
-                        "
-                      >
-                        Complex carbs, magnesium, dark chocolate
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="lbl">Notes</td>
-                      <td
-                        colspan="28"
-                        style="
-                          height: 28px;
-                          background: linear-gradient(
-                            90deg,
-                            #f5e6e5 18%,
-                            #ede9f4 43%,
-                            #e6efe8 57%,
-                            #f5edd9 100%
-                          );
-                          font-style: italic;
-                          color: #9e8e8e;
-                          font-size: 7px;
-                          text-align: left;
-                          padding-left: 8px;
-                        "
-                      >
-                        Energy curve · observations · patterns
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <img
+              src="hero.jpg"
+              alt="Luna Paper cycle tracker laid flat"
+              class="hero-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="hero-placeholder">
+              <p>hero.jpg</p>
+              <span>Drop your photo here and name it <strong>hero.jpg</strong></span>
             </div>
           </div>
         </div>
