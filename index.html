@@ -333,8 +333,8 @@
       }
 
       .hero-img-note {
-  margin-top: 18px;
-  font-size: 11px;
+  padding-top: 28px;
+  font-size: 10px;
   font-style: italic;
   color: var(--ink-light);
   opacity: .6;
@@ -537,6 +537,30 @@
         font-weight: 300;
         line-height: 1.75;
         max-width: 560px;
+      }
+
+      /* ── Printed version ────────────────────────────────────────── */
+      .printed {
+        background: var(--white);
+        padding: 96px 0;
+      }
+
+      .printed-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .printed-img-wrap {
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .printed-img {
+        width: 100%;
+        height: auto;
+        display: block;
       }
 
       /* ── What's Inside ──────────────────────────────────────────── */
@@ -1109,6 +1133,22 @@
         </div>
       </div>
     </div>
+
+    <!-- ── Printed version ───────────────────────────────────────── -->
+    <section class="printed">
+      <div class="container">
+        <div class="printed-inner fade-up">
+          <div class="printed-text">
+            <p class="section-label">Designed to be printed</p>
+            <h2 class="section-title">Beautiful on paper</h2>
+            <p class="section-sub">Stick it on the fridge, tuck it into your journal, or keep it on your desk. One sheet, one month, everything you need.</p>
+          </div>
+          <div class="printed-img-wrap">
+            <img src="paper.jpg" alt="Luna Paper cycle tracker printed out" class="printed-img">
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ── What's Inside ─────────────────────────────────────────── -->
     <section class="inside" id="inside">
