@@ -314,19 +314,34 @@
         gap: 10px;
         width: 100%;
         aspect-ratio: 16 / 7;
-        background: linear-gradient(135deg, #F5E6E5 0%, #EDE9F4 40%, #E6EFE8 75%, #F5EDD9 100%);
+        background: linear-gradient(
+          135deg,
+          #f5e6e5 0%,
+          #ede9f4 40%,
+          #e6efe8 75%,
+          #f5edd9 100%
+        );
         color: var(--ink-light);
         font-size: 14px;
       }
 
       .hero-placeholder p {
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         font-size: 22px;
         font-style: italic;
         color: var(--ink-mid);
       }
 
-      .hero-placeholder span {
+      .hero-img-note {
+  margin-top: 18px;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--ink-light);
+  opacity: .6;
+  letter-spacing: .03em;
+}
+
+.hero-placeholder span {
         font-size: 13px;
         color: var(--ink-light);
       }
@@ -1055,14 +1070,21 @@
               src="hero.jpg"
               alt="Luna Paper cycle tracker laid flat"
               class="hero-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            >
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
             <div class="hero-placeholder">
               <p>hero.jpg</p>
-              <span>Drop your photo here and name it <strong>hero.jpg</strong></span>
+              <span
+                >Drop your photo here and name it
+                <strong>hero.jpg</strong></span
+              >
             </div>
           </div>
         </div>
+        <p class="hero-img-note">Preview shown at reduced resolution.</p>
       </div>
     </section>
 
