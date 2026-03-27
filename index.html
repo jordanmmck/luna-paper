@@ -172,6 +172,9 @@
       }
 
       .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
         font-family: "Playfair Display", serif;
         font-size: 22px;
         font-weight: 400;
@@ -182,6 +185,13 @@
       }
       .nav-logo span {
         color: var(--rose);
+      }
+
+      .nav-moon {
+        width: 18px;
+        height: 18px;
+        color: var(--rose);
+        flex-shrink: 0;
       }
 
       .nav-cta {
@@ -1061,7 +1071,12 @@
     <!-- ── Nav ──────────────────────────────────────────────────── -->
     <nav>
       <div class="nav-inner">
-        <a href="#" class="nav-logo">Luna Paper</a>
+        <a href="#" class="nav-logo">
+          <svg class="nav-moon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          Luna Paper
+        </a>
         <a href="#pricing" class="nav-cta">Get it — $3 →</a>
       </div>
     </nav>
