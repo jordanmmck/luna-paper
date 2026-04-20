@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:www.mec.ca)",
+      "Bash(mkdir -p /Users/jordan/Development/mec-scraper)",
+      "Bash(npm init:*)",
+      "Bash(source ~/.zshrc)",
+      "Bash(echo \"PATH: $PATH\")",
+      "Bash(/Users/jordan/.nvm/versions/node/v20.20.1/bin/npm init:*)"
     ]
   }
 }
